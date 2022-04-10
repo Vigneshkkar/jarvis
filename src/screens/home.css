@@ -1,0 +1,49 @@
+.heading {
+  font-size: 3rem;
+  color: blueviolet;
+}
+.botContainer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 48px;
+}
+.chartCont {
+  display: flex;
+  justify-content: center;
+  margin: 150px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 400px;
+}
+.bot {
+  --color: #892ce2;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--color), 0 0 32px var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.speaking {
+  animation: vibrate 0.8s infinite;
+}
+@keyframes vibrate {
+  0%,
+  100% {
+    box-shadow: 0 0 0 8px var(--color), 0 0 32px var(--color);
+  }
+  20% {
+    box-shadow: 0 0 0 4px var(--color), 0 0 32px var(--color);
+  }
+  40% {
+    box-shadow: 0 0 0 12px var(--color), 0 0 32px var(--color);
+  }
+  60% {
+    box-shadow: 0 0 0 6px var(--color), 0 0 32px var(--color);
+  }
+  80% {
+    box-shadow: 0 0 0 10px var(--color), 0 0 32px var(--color);
+  }
+}
